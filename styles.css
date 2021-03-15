@@ -1,0 +1,40 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    height: 60px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    margin-right: 30px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    font-weight: 550;
+
+}
+
+nav a:hover{
+    color: #0065FC;
+    border-top: solid;
+}
+
+/* Les couleurs de la charte sont le bleu #0065FC, et sa version plus claire #DEEBFF ainsi que le gris pour le fond #F2F2F2.*/
