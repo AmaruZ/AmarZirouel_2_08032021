@@ -1,6 +1,10 @@
 body{
-    font-family: 'Raleway', sans-serif;
-    margin: auto;
+    font-family: 'Raleway', sans-serif;    
+}
+
+#bloc_page{
+    width: 1340px;
+    margin-left: 50px;
 }
 
 header{
@@ -37,14 +41,19 @@ nav a:hover{
     border-top: solid;
 }
 
-/* Les couleurs de la charte sont le bleu #0065FC, et sa version plus claire #DEEBFF ainsi que le gris pour le fond #F2F2F2.*/
+
 section{
     display: flex;
     flex-flow: column;
 }
+/* SECTION 1 */
 
 #research_title{
     font-size: 0.9em;
+}
+
+h1{
+    font-weight: 600;
 }
 
 #textbox{
@@ -67,6 +76,13 @@ section{
     height: 34px;
 }
 
+input::placeholder{
+    font-family: 'Raleway', sans-serif;  
+    color: black;
+    font-weight: 750;
+    padding-left: 10px;
+}
+
 #research_button{
     display: flex;
     align-items: center;
@@ -85,13 +101,13 @@ section{
     justify-content: space-around;
     align-items: center;
     font-weight: 600;
+    width: 930px;
 
 }
 .filter_buttons{
     display: flex;
     align-items: center;
     justify-content:start;
-    
 
 }
 
@@ -105,10 +121,9 @@ section{
     border-radius: 50%;
     color: #0065FC;
     position: relative;
-    left: 20px;
-    
-    
+    left: 20px; 
 }
+
 .filter_buttons p{
     display: flex;
     align-items: center;
@@ -126,6 +141,7 @@ section{
 #infos{
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 #infos i{
@@ -144,4 +160,160 @@ section{
 #infos p{
     padding-left: 10px;
     font-size: 0.9em;
+    
+}
+
+/* -----------------SECTION 2-------------------------------- */
+
+#lodging{
+    display:flex;
+    justify-content: space-between;
+    flex-flow: row;
+    
+    
+}
+.lodging_part{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    background-color: #F2F2F2;
+    height: 620px;
+    width: 880px;
+    border-radius: 20px;
+}
+
+.lodging_part h2{
+    font-size: 0.95em;
+    font-weight: 700;
+    margin: 45px 0px 5px 55px;
+}
+
+.lodging_part a{
+    text-decoration: none;
+    color: black;
+}
+
+span{
+    font-weight: bold;
+}
+
+#hotels_list{
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 880px;
+    margin-left: 40px;
+    
+}
+
+.lodging_part img{
+    height: 100px;
+    width: 225px;
+    padding: 5px 5px 0px 5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hotels{
+    background-color: white;
+    box-shadow: 1px 1px 10px grey;
+    border-radius: 10%;
+    margin: 15px;
+    height: 200px;
+    width: 235px;
+}
+.hotels_text{
+    padding-left: 10px;
+    font-size: 0.8em;
+    display:flex;
+    flex-direction: column;
+    align-content: flex-start;
+    height: 100px;
+    
+}
+.hotels_text h3{
+    font-weight: bold;
+    margin: 5px;
+}
+.hotels_text p{
+    
+    margin: 5px 5px 10px 5px;
+}
+.stars{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+
+}
+.blue_stars{
+    color: #0065FC;
+}
+.grey_stars{
+    color: #F2F2F2;
+}
+
+#afficher_plus{
+    margin: 10px 0px 50px 55px;
+    font-weight: 700;
+}
+
+
+#lodging aside{
+    display: flex;
+    flex-flow: column;
+    width: 420px;
+    height: 620px;
+    background-color: #F2F2F2;
+}
+#pop_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    margin-left: 35px;
+}
+.hotels_aside{
+    height: 144px;
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin-bottom: 30px;
+    margin-left: 35px;
+    border-radius: 20px;
+}
+
+aside a{
+    text-decoration: none;
+    color: black;
+}
+.hotels_aside img{
+    width: 127px;
+    height: 135px;
+    margin-top: 4px;
+    margin-left: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    
+}
+
+.haside_text{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    font-size: 0.8em;
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 110px;
+    width: 130px;
+}
+
+.haside_text h3, .haside_text p{
+    margin: 0px 0px 10px 0px;
+}
+
+.haside_text .stars{
+    margin-left: 0px;
+    margin-top: 25px;
+
 }
