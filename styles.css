@@ -336,6 +336,7 @@ aside a{
 #activities{
     height: 500px;
     display: flex;
+    margin-bottom: 60px;
     
 }
 #activities a{
@@ -413,4 +414,28 @@ aside a{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     
+}
+
+/* ------------- FOOTER ---------- */
+
+footer{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer ul{
+    padding: 0px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
 }
