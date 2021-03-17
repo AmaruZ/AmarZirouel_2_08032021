@@ -20,6 +20,11 @@ header img{
     height: 60px;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 ul{
     list-style-type: none;
 }
@@ -36,8 +41,6 @@ nav li{
 }
 
 nav a{
-    text-decoration: none;
-    color: black;
     font-weight: 500;
     height: 100%;
     display: flex;
@@ -120,7 +123,6 @@ input::placeholder{
 }
 
 #research_button a{
-    text-decoration: none;
     color: white;
     font-size: 0.95em;
 }
@@ -154,6 +156,7 @@ input::placeholder{
     left: 20px; 
 }
 
+
 .filter_buttons p{
     display: flex;
     align-items: center;
@@ -168,7 +171,7 @@ input::placeholder{
     padding-left: 30px;
 }
 
-.filter_buttons p:hover{
+.filter_buttons:hover p{
     background-color: #0065FC;
     color: white;
 }
@@ -220,11 +223,6 @@ input::placeholder{
     font-size: 1.4em;
     font-weight: 800;
     margin: 43px 0px 5px 55px;
-}
-
-.lodging_part a{
-    text-decoration: none;
-    color: black;
 }
 
 span{
@@ -306,7 +304,7 @@ span{
     color: #0065FC;
 }
 .grey_stars{
-    color: #F2F2F2;
+    color: #868686;
 }
 
 #afficher_plus{
@@ -329,8 +327,6 @@ span{
     align-items: center;
     width: 350px;
     margin-left: 35px;
-    
- 
 }
 
 #pop_title h2{
@@ -359,7 +355,6 @@ span{
 }
 
 aside a{
-    text-decoration: none;
     color: black;
     display: flex;
     height: 100%;
@@ -410,76 +405,78 @@ aside a{
 #activities{
     height: 500px;
     display: flex;
-    margin-bottom: 60px;
-    
+    margin-bottom: 60px;  
 }
+
+#activities h2{
+    margin-top: 40px;
+}
+
 #activities a{
-    text-decoration: none;
     color: black;
+    width: 100%;
 }
+
 #activities_photos{
     height: 445px;
     display: flex;
     flex-flow: column wrap;
     justify-content:space-between;
-    
 }
 
-.activities_big{
-    height: 445px;
-    width: 300px;
-    box-shadow: 1px 1px 10px rgb(224, 224, 224),1px 1px 10px rgb(224, 224, 224);
+.activities{
+    box-shadow: 1px 1px 10px rgba(224, 224, 224, 0.5),1px 1px 10px rgb(224, 224, 224);
     border-radius: 10px;
-}
-
-.activities_big img{
-    height: 390px;
     width: 300px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    image-rendering: crisp-edges;
-
+    display: flex;
 }
 
-#activities_mediumbig{
+.activities:nth-child(1), .activities:nth-child(4){
+    height: 445px;  
+}
+.activities:nth-child(2){
     height: 235px;
-    width: 300px;
-    box-shadow: 1px 1px 10px rgb(224, 224, 224),1px 1px 10px rgb(224, 224, 224);
-    border-radius: 10px;
 }
-
-#activities_mediumbig img{
+.activities:nth-child(3){
+    height: 165px;
+}
+.activities:nth-child(5){
+    height: 195px;
+}
+.activities:nth-child(6){
+    height: 210px;
+}
+.activities:nth-child(1) .activities_photo{
+    height: 390px;
+    background-image: url('images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+}
+.activities:nth-child(2) .activities_photo{
     height: 180px;
-    width: 300px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    background-image: url('images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
 }
-
-#activites_small{
-    height: 165px;
-    width: 300px;
-    box-shadow: 1px 1px 10px rgb(224, 224, 224),1px 1px 10px rgb(224, 224, 224);
-    border-radius: 10px;
-}
-#activites_small img{
+.activities:nth-child(3) .activities_photo{
     height: 110px;
-    width: 300px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    background-image: url('images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
+}
+.activities:nth-child(4) .activities_photo{
+    height: 390px;
+    background-image: url('images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
+}
+.activities:nth-child(5) .activities_photo{
+    height: 140px;
+    background-image: url('images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg');
+}
+.activities:nth-child(6) .activities_photo{
+    height: 155px;
+    background-image: url('images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
 }
 
-.activities_medium{
-    height: 165px;
-    width: 300px;
-    box-shadow: 1px 1px 10px rgb(224, 224, 224),1px 1px 10px rgb(224, 224, 224);
-    border-radius: 10px;
-}
-.activities_medium img{
-    height: 110px;
-    width: 300px;
+.activities_photo{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-
 }
 
 .activities_text{
@@ -489,12 +486,9 @@ aside a{
     align-items: center;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    
+    background-color: white;
 }
 
-.activities:nth-child(4){
-    opacity: 0.5;
-}
 
 /* ------------- FOOTER ---------- */
 
@@ -502,7 +496,6 @@ footer{
     background-color: #F2F2F2;
     display: flex;
     justify-content: space-around;
-    border-style: solid;
     width: 100%;
 }
 
