@@ -204,9 +204,8 @@ input::placeholder{
     display:flex;
     justify-content: space-between;
     flex-flow: row;
-    
-    
 }
+
 .lodging_part{
     display: flex;
     flex-flow: column;
@@ -218,9 +217,9 @@ input::placeholder{
 }
 
 .lodging_part h2{
-    font-size: 1em;
+    font-size: 1.4em;
     font-weight: 800;
-    margin: 45px 0px 5px 55px;
+    margin: 43px 0px 5px 55px;
 }
 
 .lodging_part a{
@@ -241,44 +240,67 @@ span{
     
 }
 
-.lodging_part img{
-    height: 100px;
-    width: 225px;
-    padding: 5px 5px 0px 5px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
 .hotels{
     background-color: white;
     box-shadow: 1px 1px 10px rgba(128,128,128,0.5);
-    border-radius: 10%;
+    border-radius: 20px;
     margin: 15px;
     height: 200px;
-    width: 235px;
+    width: 245px;
+    padding: 5px;
+    box-sizing: border-box;
 }
+
+.hotels_image{
+    height: 60%;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hotels:nth-child(1) .hotels_image{
+    background-image: url('images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
+}
+.hotels:nth-child(2) .hotels_image{
+    background-image: url('images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
+}
+.hotels:nth-child(3) .hotels_image{
+    background-image: url('images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg');
+}
+.hotels:nth-child(4) .hotels_image{
+    background-image: url('images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg');
+}
+.hotels:nth-child(5) .hotels_image{
+    background-image: url('images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg');
+}
+.hotels:nth-child(6) .hotels_image{
+    background-image: url('images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
+}
+
 .hotels_text{
-    padding-left: 10px;
     font-size: 0.8em;
     display:flex;
     flex-direction: column;
     align-content: flex-start;
-    height: 100px;
-    
+    height: 40%;
+    width: auto;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 .hotels_text h3{
     font-weight: 700;
-    margin: 5px;
+    margin: 0px;
 }
 .hotels_text p{
+    margin: 6px 0px 6px 0px;
     
-    margin: 5px 5px 10px 5px;
 }
 .stars{
     display: flex;
     flex-direction: row;
-    margin-left: 5px;
-
 }
 .blue_stars{
     color: #0065FC;
@@ -292,7 +314,6 @@ span{
     font-weight: 700;
 }
 
-
 #lodging aside{
     display: flex;
     flex-flow: column;
@@ -301,59 +322,77 @@ span{
     background-color: #F2F2F2;
     border-radius: 20px;
 }
+
 #pop_title{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 350px;
     margin-left: 35px;
+    
  
 }
 
 #pop_title h2{
-    font-size: 1em;
+    font-size: 1.4em;
     font-weight: 800;
-    margin-top: 45px;
+    margin-top: 42px;
     margin-left: 5px;
 }
 
 #pop_title i{
+    font-size: 1.2em;
     margin-top: 35px;
 }
 
 .hotels_aside{
     height: 144px;
-    width: 350px;
+    width: 344px;
     background-color: white;
     margin-bottom: 30px;
     margin-left: 35px;
     border-radius: 20px;
+    box-shadow: 1px 1px 10px rgba(128,128,128,0.3);
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 5px 0px 5px 5px;
 }
 
 aside a{
     text-decoration: none;
     color: black;
     display: flex;
-    
+    height: 100%;
+    width: 100%;
 }
-.hotels_aside img{
-    width: 127px;
-    height: 135px;
-    margin-top: 4px;
-    margin-left: 5px;
+.haside_image{
+    width: 132px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hotels_aside:nth-child(2) .haside_image{
+    background-image: url('images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
+}
+.hotels_aside:nth-child(3) .haside_image{
+    background-image: url('images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg');
+}
+.hotels_aside:nth-child(4) .haside_image{
+    background-image: url('images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
 }
 
 .haside_text{
     display: flex;
     flex-direction: column;
     align-items:flex-start;
-    font-size: 0.78em;
-    margin-top: 20px;
-    margin-left: 20px;
+    font-size: 0.85em;
+    margin-left: 17px;
+    margin-top: 10px;
     height: 110px;
-    width: 130px;
+    width: 140px;
 }
 
 .haside_text h3, .haside_text p{
