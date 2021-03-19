@@ -18,6 +18,7 @@ header{
 
 header img{
     height: 60px;
+    max-width: 100%;
 }
 
 a{
@@ -69,9 +70,7 @@ section{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 30px;
-
-    
+    margin-top: 30px;    
 }
 
 h1{
@@ -125,21 +124,25 @@ input::placeholder{
 #research_button a{
     color: white;
     font-size: 0.95em;
+    
 }
 
 
 #filter{
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
     font-weight: 600;
     width: 930px;
+    margin-top: 20px;
 
 }
+
+
 .filter_buttons{
     display: flex;
     align-items: center;
-    justify-content:start;
 
 }
 
@@ -169,6 +172,7 @@ input::placeholder{
     border-color: rgb(204, 204, 204);
     padding-right: 15px;
     padding-left: 30px;
+    margin: 0px;
 }
 
 .filter_buttons:hover p{
@@ -206,17 +210,20 @@ input::placeholder{
 #lodging{
     display:flex;
     justify-content: space-between;
-    flex-flow: row;
+    flex-flow: row nowrap;
+    width: auto;
 }
 
 .lodging_part{
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     align-items: flex-start;
     background-color: #F2F2F2;
-    height: 620px;
+    min-height: 620px;
+    height: auto;
     width: 880px;
     border-radius: 20px;
+
 }
 
 .lodging_part h2{
@@ -247,6 +254,7 @@ span{
     width: 245px;
     padding: 5px;
     box-sizing: border-box;
+    
 }
 
 .hotels_image{
@@ -315,8 +323,9 @@ span{
 #lodging aside{
     display: flex;
     flex-flow: column;
+    min-height: 620px;
+    height: auto;
     width: 420px;
-    height: 620px;
     background-color: #F2F2F2;
     border-radius: 20px;
 }
@@ -422,6 +431,7 @@ aside a{
     display: flex;
     flex-flow: column wrap;
     justify-content:space-between;
+    width: 100%;
 }
 
 .activities{
@@ -496,7 +506,7 @@ footer{
     background-color: #F2F2F2;
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: auto;
 }
 
 footer a{
