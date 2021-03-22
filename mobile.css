@@ -1,11 +1,9 @@
-@media all and (max-device-width: 480px)
+@media all and (max-width: 480px)
 {
     /* Vos règles CSS pour les mobiles ici */
 
     #bloc_page{
         width: auto;
-
-
     }
 
     body{
@@ -14,23 +12,23 @@
         padding-right: 0px;
         margin-right: 0px;
         align-items: center;
-        justify-content: stretch;
+        justify-items: center;
     }
-
-    *{
-        padding: 0px;
-        margin: 0px;
-    }
-
 
 
     header{
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
+        padding-top: 20px;
+        flex-direction: column;
+        align-items: flex-start;
         justify-content: flex-start;
         width: auto;
+        font-size: 1.5em;
+        height: 160px;
     }
+
+    /* header img{
+        float: left;
+    } */
 
     nav ul
     {
@@ -40,8 +38,11 @@
 
     }
 
-
-
+    nav li:nth-child(3){
+        position: absolute;
+        right: 0px;
+        top: 20px;
+    }
 
     nav li:nth-child(1){
         order: 2;
@@ -52,16 +53,74 @@
         order: 3;
         width: 50%;
     }
+
+    nav a:active, nav li:active{
+        color: red;
+    }
+    
     /* ------------------- 1e section ---------------------------- */
     
     #research{
-        width: 400px;
+        width: auto;
+        align-items: center;
     }
+
+    #research_title{
+        font-size: 1em;
+        margin-left: 20px;
+    }
+
+    #research_title p{
+        margin-top: 10px;
+        font-size: 1.1em;
+
+    }
+    #textbox{
+        margin-top: 10px;
+    }
+
+    #mapmarker{
+        height: 50px;
+        width: 50px;
+    }
+
+    #textbox input{
+        width: auto;
+        height: 50px;
+        box-sizing: border-box;
+    }
+
+    #textbox p{
+        display: none;
+    }
+
+    #search_icon{
+        display: initial;
+    }
+
+    #research_button{
+        height: 50px;
+        width: 50px;
+        border-radius: 15px;
+    }
+
     #filter{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        width: auto;
+    }
+
+    #filter_title{
+        margin-left: 20px;
+    }
+
+    #filter_buttons{
         height: auto;
         width: auto;
-        flex-flow: column wrap;
-    
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-content: space-around;
     }
 
     /* ------------------- 2e section ---------------------------- */
@@ -73,12 +132,18 @@
     }
 
     .lodging_part{
-        display: flex;
-        flex-direction: column;
-        min-height: 620px;
         height: auto;
-        border-radius: none;
+        border-radius: 0px;
         width: auto;
+        background-color: #FFFFFF;
+        align-items: center;
+        
+    }
+
+    .lodging_part h2{
+        font-size: 1.4em;
+        font-weight: 800;
+        margin: 43px 0px 5px 0px;
     }
 
     #hotels_list{
@@ -87,7 +152,7 @@
         height: auto;
         width: auto;
         margin-left: 0px;
-        align-content: center;
+        align-items: center;
         
     }
     .hotels{
@@ -99,19 +164,17 @@
     }
 
     #lodging aside{
-
-        width: 400px;
-
+        width: auto;
+        border-radius: 0px;
+        align-content: center;
     }
 
     #pop_title{
         width: auto;
-    }
-    aside{
-        width: auto;
-    }
 
-
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 
 
     /* ------------------- 3e section ---------------------------- */
