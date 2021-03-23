@@ -1,7 +1,5 @@
-@media all and (max-width: 480px)
-{
-    /* Vos règles CSS pour les mobiles ici */
-
+@media all and (max-width: 480px){
+    
     #bloc_page{
         width: auto;
     }
@@ -11,80 +9,77 @@
         margin: 0px;
         padding-right: 0px;
         margin-right: 0px;
-        align-items: center;
-        justify-items: center;
     }
 
 
     header{
-        padding-top: 20px;
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
         width: auto;
-        font-size: 1.5em;
-        height: 160px;
+        font-size: 1em;
     }
 
-    /* header img{
-        float: left;
-    } */
-
-    nav ul
-    {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
-    }
-
-    nav li:nth-child(3){
+    header img{
         position: absolute;
-        right: 0px;
-        top: 20px;
     }
 
-    nav li:nth-child(1){
-        order: 2;
-        width: 50%;
+    nav p{
+        text-align: end;
+        margin-left: 0px;
+        margin-right: 20px;
     }
 
-    nav li:nth-child(2){
-        order: 3;
-        width: 50%;
-    }
-
-    nav a:active, nav li:active{
-        color: red;
+    nav 
+    {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        position: relative;
     }
     
+    nav li{
+        width: 50%;
+        box-shadow: inset 0px -3px 0px 0px #f2f2f2;
+        padding-bottom: 10px;
+    }
+
+    nav li:hover{
+        box-shadow: inset 0px -3px 0px 0px #0065FC;
+    }
+
+    nav li a:hover{
+        color: #0065FC;
+    }
+
     /* ------------------- 1e section ---------------------------- */
     
     #research{
         width: auto;
-        align-items: center;
+        align-items: flex-start;
+        padding-left: 20px;
     }
 
     #research_title{
-        font-size: 1em;
-        margin-left: 20px;
+        font-size: 0.93em;
     }
 
     #research_title p{
         margin-top: 10px;
-        font-size: 1.1em;
+        font-size: 1.05em;
 
     }
     #textbox{
         margin-top: 10px;
+        align-content: flex-start;
+        width: auto;
     }
 
     #mapmarker{
         height: 50px;
         width: 50px;
+        box-sizing: border-box;
     }
 
-    #textbox input{
+    #textbox input[type="text"]{
+        min-width: 240px;
         width: auto;
         height: 50px;
         box-sizing: border-box;
@@ -102,6 +97,7 @@
         height: 50px;
         width: 50px;
         border-radius: 15px;
+        margin-left: -12px;
     }
 
     #filter{
@@ -111,16 +107,19 @@
         width: auto;
     }
 
-    #filter_title{
-        margin-left: 20px;
-    }
-
     #filter_buttons{
         height: auto;
         width: auto;
         flex-flow: row wrap;
-        justify-content: flex-start;
-        align-content: space-around;
+        margin-left: 15px;
+    }
+    .filter_button{
+        margin-bottom: 10px;
+    }
+
+    #infos{
+        font-size: 1.1em;
+        margin-bottom: 20px;
     }
 
     /* ------------------- 2e section ---------------------------- */
@@ -128,22 +127,38 @@
     #lodging{
         flex-direction: column-reverse;
         width: auto;
-
     }
 
+    #lodging aside{
+        width: auto;
+        border-radius: 0px;
+        align-content: center;
+        height: auto;
+    }
+
+    #pop_title{
+        width: 344px;
+        margin: auto;
+    }
+
+    .hotels_aside{
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
     .lodging_part{
         height: auto;
         border-radius: 0px;
         width: auto;
         background-color: #FFFFFF;
-        align-items: center;
         
     }
 
     .lodging_part h2{
         font-size: 1.4em;
         font-weight: 800;
-        margin: 43px 0px 5px 0px;
+        margin: 43px 0px 5px 15px;
     }
 
     #hotels_list{
@@ -151,7 +166,8 @@
         flex-flow: column wrap;
         height: auto;
         width: auto;
-        margin-left: 0px;
+        margin-left: auto;
+        margin-right: auto;
         align-items: center;
         
     }
@@ -159,74 +175,60 @@
         width: auto;
         min-width: 334px;
         min-height: 200px;
-
-        
+        margin-bottom: 0px;
     }
 
-    #lodging aside{
-        width: auto;
-        border-radius: 0px;
-        align-content: center;
+    #afficher_plus{
+        margin: 0px 0px 0px 20px;
+        align-content: flex-start;
     }
-
-    #pop_title{
-        width: auto;
-
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
 
     /* ------------------- 3e section ---------------------------- */
 
     #activities{
         height: auto;
-
-        
     }
 
     .activities{
         max-height: 190px;
+        min-height: 190px;
         width: 334px;
+        margin: 0px auto 20px auto;
     }
 
     #activities_photos{
         height: auto;
-        display: block;
-        justify-content: space-evenly;
     }
-
-    .activities:nth-child(1) .activities_photo{
-        height: 134px;
-    }
-    .activities:nth-child(2) .activities_photo{
-        height: 134px;
-    }
-    .activities:nth-child(3) .activities_photo{
-        height: 134px;
-    }
-    .activities:nth-child(4) .activities_photo{
-        height: 134px;
-    }
-    .activities:nth-child(5) .activities_photo{
-        height: 134px;
-    }
-    .activities:nth-child(6) .activities_photo{
-        height: 134px;
+    .activities_photo{
+        min-height: 134px;
+        max-height: 134px;
     }
 
     .activities_text{
-        height: auto;
+        height: 50px;
     }
+
 
 
     footer{
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: flex-start;
         width: auto;
+        padding-left: 20px;
+        height: 490px;
     }
 
+    footer ul{
+        margin: 0;
+    }
 
+    footer h3{
+        margin-block-start: 50px;
+        margin-block-end: 0px;
+    }
 
+    footer li{
+        margin-block-start: 15px;
+    }
 
 }
