@@ -116,24 +116,15 @@
     /* ------------------- 2e section ---------------------------- */
 
     #lodging{
+        flex-direction: column-reverse;
         width: auto;
     }
 
     #lodging aside{
-        order: 1;
         width: auto;
-        max-width: 100%;
-        min-height: 580px;
-        height: auto;
         border-radius: 0px;
         align-content: center;
-        flex-flow: column nowrap;
-    }
-
-    #haside_list{
-        flex-flow: column wrap;
-        min-height: auto;
-        width: auto;
+        height: auto;
     }
 
     #pop_title{
@@ -149,15 +140,15 @@
         margin-right: auto;
     }
     
-    #lodging_part{
-        order: 2;
+    .lodging_part{
         height: auto;
         border-radius: 0px;
         width: auto;
-        background-color: #FFFFFF;  
+        background-color: #FFFFFF;
+        
     }
 
-    #lodging_part h2{
+    .lodging_part h2{
         font-size: 1.4em;
         font-weight: 800;
         margin: 43px 0px 5px 15px;
