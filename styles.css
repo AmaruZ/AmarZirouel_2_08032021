@@ -42,7 +42,6 @@ nav ul{
     text-align: end;
     font-size: 1em;
     font-weight: 400;
-
 }
 
 nav li{
@@ -70,14 +69,22 @@ nav p{
 nav p a{
     color: #0065FC;
 }
+
 nav li:hover{
     box-shadow: inset 0px 1px 0px 0px #0065FC;
 }
 
-
 nav li:nth-child(3) a{
     color: #0065FC;
     font-weight: 800;
+}
+
+nav li a:active{
+    color: #0065FC;
+}
+
+nav li:active{
+    box-shadow: inset 0px 1px 0px 0px #0065FC;
 }
 
 section{
@@ -178,7 +185,6 @@ input[type=text]:focus{
 #filter_buttons{
     display: flex;
     margin-left: 45px;
-
 }
 
 .filter_button{
@@ -269,9 +275,9 @@ input[type=text]:focus{
 }
 
 .lodging_part h2{
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-weight: 800;
-    margin: 43px 0px 5px 55px;
+    margin: 43px 0px 5px 50px;
 }
 
 span{
@@ -282,8 +288,8 @@ span{
     display: flex;
     flex-wrap: wrap;
     height: 500px;
-    width: 880px;
-    margin-left: 40px;
+    width: auto;
+    justify-content: center;
     
 }
 
@@ -343,8 +349,7 @@ span{
     margin: 0px;
 }
 .hotels_text p{
-    margin: 6px 0px 6px 0px;
-    
+    margin: 6px 0px 6px 0px; 
 }
 .stars{
     display: flex;
@@ -391,6 +396,12 @@ span{
     margin-top: 35px;
 }
 
+#haside_list{
+    width: auto;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
 .hotels_aside{
     height: 144px;
     width: 344px;
@@ -419,13 +430,13 @@ aside a{
     background-size: cover;
 }
 
-.hotels_aside:nth-child(2) .haside_image{
+.hotels_aside:nth-child(1) .haside_image{
     background-image: url('images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
 }
-.hotels_aside:nth-child(3) .haside_image{
+.hotels_aside:nth-child(2) .haside_image{
     background-image: url('images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg');
 }
-.hotels_aside:nth-child(4) .haside_image{
+.hotels_aside:nth-child(3) .haside_image{
     background-image: url('images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
 }
 

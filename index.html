@@ -6,7 +6,7 @@
   <meta charset="utf-8" />
   <link href="styles.css" rel="stylesheet" />
   <link href="mobile.css" rel="stylesheet" media="all and (max-width: 480px)" />
-  <link href="tablette.css" rel="stylesheet" media="all and (max-width: 1317px)" />
+  <link href="tablette.css" rel="stylesheet" media="all and (min-width: 481px) and (max-width: 1317px)" />
   <script src="https://kit.fontawesome.com/f345641d85.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500;600;700;800&display=swap"
@@ -37,11 +37,11 @@
         <i id="mapmarker" class="fas fa-map-marker-alt"></i>
         <input type="text" placeholder="Marseille, France" />
         <a href="#">
-        <div id="research_button">
+          <div id="research_button">
             <p>Rechercher</p>
             <i id="search_icon" class="fas fa-search"></i>
-        </div>
-      </a>
+          </div>
+        </a>
       </div>
       <div id="filter">
         <div id="filter_title">
@@ -196,58 +196,64 @@
           <h2>Les plus populaires</h2>
           <i class="fas fa-chart-line"></i>
         </div>
-        <div class="hotels_aside">
-          <a href="#">
-            <div class="haside_image"></div>
-            <div class="haside_text">
-              <h3>Hôtel Le soleil du matin</h3>
-              <p>Nuit à partir de 128<span>€</span></p>
-              <div class="stars">
-                <div class="blue_stars">
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                    class="fas fa-star"></i><i class="fas fa-star"></i>
+        <div id="haside_list">
+          
+            <div class="hotels_aside">
+              <a href="#">
+                <div class="haside_image"></div>
+                <div class="haside_text">
+                  <h3>Hôtel Le soleil du matin</h3>
+                  <p>Nuit à partir de 128<span>€</span></p>
+                  <div class="stars">
+                    <div class="blue_stars">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          
+            <div class="hotels_aside">
+              <a href="#">
+              <div class="haside_image"></div>
+              <div class="haside_text">
+                <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                <p>Nuit à partir de 71<span>€</span></p>
+                <div class="stars">
+                  <div class="blue_stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                      class="fas fa-star"></i>
+                  </div>
+                  <div class="grey_stars">
+                    <i class="fas fa-star"></i>
+                  </div>
                 </div>
               </div>
+            </a>
             </div>
-          </a>
-        </div>
-        <div class="hotels_aside">
-          <a href="#">
-            <div class="haside_image"></div>
-            <div class="haside_text">
-              <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-              <p>Nuit à partir de 71<span>€</span></p>
-              <div class="stars">
-                <div class="blue_stars">
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                    class="fas fa-star"></i>
-                </div>
-                <div class="grey_stars">
-                  <i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="hotels_aside">
-          <a href="#">
-            <div class="haside_image"></div>
-            <div class="haside_text">
-              <h3>Hôtel Tout bleu et Blanc</h3>
-              <p>Nuit à partir de 68<span>€</span></p>
-              <div class="stars">
-                <div class="blue_stars">
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                    class="fas fa-star"></i>
-                </div>
-                <div class="grey_stars">
-                  <i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
 
+
+            <div class="hotels_aside">
+              <a href="#">
+                <div class="haside_image"></div>
+                <div class="haside_text">
+                  <h3>Hôtel Tout bleu et Blanc</h3>
+                  <p>Nuit à partir de 68<span>€</span></p>
+                  <div class="stars">
+                    <div class="blue_stars">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i>
+                    </div>
+                    <div class="grey_stars">
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+        </div>
       </aside>
     </section>
     <section id="activities">
