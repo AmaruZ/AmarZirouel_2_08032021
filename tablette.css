@@ -9,6 +9,28 @@
         padding-right: 0px;
         margin-right: 0px;
     }
+
+
+    #filter{
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-weight: 800;
+        width: auto;
+        margin-top: 20px;
+    }
+
+
+    #filter_buttons{
+        height: auto;
+        width: auto;
+        flex-flow: row wrap;
+        margin-left: 15px;
+    }
+
+    .filter_button{
+        margin-bottom: 10px;
+    }
 /* -----------------SECTION 2-------------------------------- */
 
     #lodging{
@@ -19,6 +41,7 @@
     }
 
 
+/* -----------------SECTION 3-------------------------------- */
 
     #activities{
         height: auto;
@@ -49,9 +72,6 @@
     .activities_text{
         min-height: 50px;
     }
-
-
-
 }
 
 
@@ -60,14 +80,7 @@
 
 @media all and (min-width: 957px) and (max-width: 1317px){
 
-    
-
-
-
-
 /* -----------------SECTION 2-------------------------------- */
-
-
 
 .lodging_part{
     display: flex;
@@ -78,7 +91,6 @@
     width: 880px;
     border-radius: 20px;
     margin-block-end: 20px;
-
 }
 
 .lodging_part h2{
@@ -135,6 +147,8 @@
     padding-top: 10px;
     margin-block-start: 0px;
     margin-left: 0px;
+    display: flex;
+    justify-content: space-between;
 }
 
 aside a{
@@ -154,24 +168,7 @@ aside a{
 
 
 }
-
-@media all and (min-width: 481px) and (max-width: 956px){
-
-    #filter{
-        flex-flow: column wrap;
-        justify-content: flex-start;
-        align-items: flex-start;
-        font-weight: 800;
-        width: auto;
-        margin-top: 20px;
-    }
-
-    #filter_buttons{
-
-    }
-
-    /* -----------------SECTION 2-------------------------------- */
-
+@media all and (min-width: 481px) and (max-width:956px){
     .lodging_part{
         display: flex;
         flex-direction: column;
@@ -204,7 +201,116 @@ aside a{
     #hotels_list {
         height: auto;
     }
+    #lodging aside{
+        width: auto;
+        height: auto;
+    }
+
+    #haside_list{
+        margin: auto;
+    }
+}
+
+@media all and (min-width: 690px) and (max-width: 956px){
 
 
+
+    /* -----------------SECTION 2-------------------------------- */
+
+    
+    #haside_list{
+        flex-flow: row wrap;
+    }
+
+    .hotels_aside{
+        background-color: white;
+        box-shadow: 1px 1px 10px rgba(128,128,128,0.5);
+        border-radius: 20px;
+        margin: 15px;
+        height: 200px;
+        width: 200px;
+        padding: 5px;
+        box-sizing: border-box;
+        
+    }
+    
+    .haside_image{
+        height: 60%;
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+    }
+    
+    .haside_text{
+        font-size: 0.8em;
+        height: 40%;
+        width: auto;
+        padding-left: 10px;
+        padding-top: 10px;
+        margin-block-start: 0px;
+        margin-left: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    aside a{
+        flex-direction: column;
+    }
+
+    .haside_text h3, .haside_text p{
+        margin: 0px;
+    }
+    
+    .haside_text .stars{
+        margin-left: 0px;
+        margin-block-start: 0px;
+    }
+    
+
+
+
+
+}
+
+@media all and (min-width: 481px) and (max-width: 689px){
+
+
+
+
+
+    #haside_list{
+        flex-flow: column nowrap;
+    }
+    
+    .hotels_aside{
+        height: 144px;
+        width: 344px;
+        background-color: white;
+        margin-bottom: 30px;
+        margin-left: 35px;
+        border-radius: 20px;
+        box-shadow: 1px 1px 10px rgba(128,128,128,0.3);
+        border-radius: 20px;
+        box-sizing: border-box;
+        padding: 5px 0px 5px 5px;
+    }
+    .haside_image{
+        width: 132px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .haside_text{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        font-size: 0.85em;
+        margin-left: 17px;
+        margin-top: 10px;
+        height: 110px;
+        width: 140px;
+    }
 
 }
