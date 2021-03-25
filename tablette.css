@@ -10,6 +10,14 @@
         margin-right: 0px;
     }
 
+    nav{
+        margin-right: 20px;
+    }
+
+    #research{
+        padding-left: 20px;
+    }
+
 
     #filter{
         flex-flow: column wrap;
@@ -51,6 +59,8 @@
         flex-flow: row wrap;
         justify-content:space-between;
         width: auto;
+        background-position: center;
+        background-size: cover;
         max-width: 1199px;
         margin-left: 20px;
         margin-right: 20px;
@@ -71,6 +81,17 @@
     
     .activities_text{
         min-height: 50px;
+    }
+
+    #footer_block{
+        justify-content: space-evenly;
+    }
+
+    footer ul{
+        padding: 0px;
+        margin-block-start: 0px;
+        margin-block-end: 30px;
+        margin-right: 0;
     }
 }
 
@@ -169,6 +190,7 @@ aside a{
 
 }
 @media all and (min-width: 481px) and (max-width:956px){
+
     .lodging_part{
         display: flex;
         flex-direction: column;
@@ -178,7 +200,6 @@ aside a{
         width: auto;
         border-radius: 20px;
         margin-block-end: 20px;
-    
     }
 
     .hotels{
@@ -193,9 +214,6 @@ aside a{
         width: 100%;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
     #hotels_list {
@@ -213,11 +231,10 @@ aside a{
 
 @media all and (min-width: 690px) and (max-width: 956px){
 
-
-
     /* -----------------SECTION 2-------------------------------- */
 
-    
+
+
     #haside_list{
         flex-flow: row wrap;
     }
@@ -265,26 +282,22 @@ aside a{
         margin-left: 0px;
         margin-block-start: 0px;
     }
-    
-
-
-
 
 }
 
 @media all and (min-width: 481px) and (max-width: 689px){
 
-
-
-
+    .hotels{
+        min-width: 400px;
+    }
 
     #haside_list{
         flex-flow: column nowrap;
     }
     
     .hotels_aside{
-        height: 144px;
-        width: 344px;
+        height: 200px;
+        width: 400px;
         background-color: white;
         margin-bottom: 30px;
         margin-left: 35px;
@@ -295,20 +308,16 @@ aside a{
         padding: 5px 0px 5px 5px;
     }
     .haside_image{
-        width: 132px;
+        width: 200px;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
     .haside_text{
-        display: flex;
         flex-direction: column;
         align-items:flex-start;
         font-size: 0.85em;
-        margin-left: 17px;
-        margin-top: 10px;
+        margin-left: 20px;
+        margin-top: 30px;
         height: 110px;
         width: 140px;
     }

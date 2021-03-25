@@ -24,8 +24,7 @@
         margin-right: 20px;
     }
 
-    nav 
-    {
+    nav {
         flex-direction: column-reverse;
         justify-content: flex-end;
         position: relative;
@@ -43,6 +42,10 @@
 
     nav li a:hover{
         color: #0065FC;
+    }
+
+    nav li:active{
+        box-shadow: inset 0px -3px 0px 0px #0065FC;
     }
 
     /* ------------------- 1e section ---------------------------- */
@@ -109,6 +112,7 @@
         flex-flow: row wrap;
         margin-left: 15px;
     }
+
     .filter_button{
         margin-bottom: 10px;
     }
@@ -192,28 +196,65 @@
         min-height: 190px;
         width: 334px;
         margin: 0px auto 20px auto;
+        border-radius: 15px;
     }
 
     #activities_photos{
         height: auto;
     }
+
     .activities_photo{
+        background-position: 50% 20%;
         min-height: 134px;
         max-height: 134px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .activities:nth-child(1) .activities_photo{
+        background-position: 50% 19%;
+        background-size: cover;
+    }
+
+    .activities:nth-child(2) .activities_photo{
+        background-position: 50% 42%;
+    }
+
+    .activities:nth-child(3) .activities_photo{
+        background-position: 50% 18%;
+    }
+    .activities:nth-child(4) .activities_photo{
+        background-position: 50% 18%;
+    }
+    .activities:nth-child(5) .activities_photo{
+        background-position: 50% 18%;
+    }
+
+    .activities:nth-child(6) .activities_photo{
+        background-position: 50% 26%;
     }
 
     .activities_text{
+        margin-block-start: 5px;
         height: 50px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
     }
 
-
+    .activities_text h3{
+        font-size: 1em;
+        font-weight: 800;
+    }
 
     footer{
+        height: 490px;
+    }
+
+    #footer_block{
         flex-direction: column;
         justify-content: flex-start;
         width: auto;
-        padding-left: 20px;
-        height: 490px;
+        margin-left: 20px;
+    
     }
 
     footer ul{
@@ -227,6 +268,10 @@
 
     footer li{
         margin-block-start: 15px;
+    }
+
+    footer a{
+        font-weight: 500;
     }
 
 }
