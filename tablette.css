@@ -89,8 +89,8 @@
 
     footer ul{
         padding: 0px;
-        margin-block-start: 0px;
-        margin-block-end: 30px;
+        margin-top: 0px;
+        margin-bottom: 30px;
         margin-right: 0;
     }
 }
@@ -111,7 +111,7 @@
     height: 620px;
     width: 880px;
     border-radius: 20px;
-    margin-block-end: 20px;
+    margin-bottom: 20px;
 }
 
 .lodging_part h2{
@@ -166,7 +166,7 @@
     width: auto;
     padding-left: 10px;
     padding-top: 10px;
-    margin-block-start: 0px;
+    margin-top: 0px;
     margin-left: 0px;
     display: flex;
     justify-content: space-between;
@@ -182,7 +182,7 @@ aside a{
 
 .haside_text .stars{
     margin-left: 0px;
-    margin-block-start: 0px;
+    margin-top: 0px;
 }
 
 /* -------------------- 3e SECTION --------------------------- */
@@ -199,7 +199,7 @@ aside a{
         height: auto;
         width: auto;
         border-radius: 20px;
-        margin-block-end: 20px;
+        margin-bottom: 20px;
     }
 
     .hotels{
@@ -265,7 +265,7 @@ aside a{
         width: auto;
         padding-left: 10px;
         padding-top: 10px;
-        margin-block-start: 0px;
+        margin-top: 0px;
         margin-left: 0px;
         display: flex;
         justify-content: space-between;
@@ -280,7 +280,7 @@ aside a{
     
     .haside_text .stars{
         margin-left: 0px;
-        margin-block-start: 0px;
+        margin-top: 0px;
     }
 
 }
