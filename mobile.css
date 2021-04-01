@@ -27,7 +27,6 @@
     nav {
         flex-direction: column-reverse;
         justify-content: flex-end;
-        position: relative;
     }
     
     nav li{
@@ -221,9 +220,11 @@
 
     .activities:nth-child(3) .activities_photo{
         background-position: 50% 18%;
+        
     }
     .activities:nth-child(4) .activities_photo{
         background-position: 50% 18%;
+        background-size: cover;
     }
     .activities:nth-child(5) .activities_photo{
         background-position: 50% 18%;
@@ -258,7 +259,8 @@
     }
 
     footer ul{
-        margin: 0;
+        margin: 0 0 -20px 0;
+
     }
 
     footer h3{
