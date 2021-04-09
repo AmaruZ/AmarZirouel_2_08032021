@@ -129,7 +129,7 @@
     }
 
     #lodging aside{
-        width: auto;
+        width: 100%;
         border-radius: 0px;
         align-content: center;
         height: auto;
@@ -193,7 +193,8 @@
     .activities{
         max-height: 190px;
         min-height: 190px;
-        width: 334px;
+        min-width: 334px;
+        width: 95%;
         margin: 0px auto 20px auto;
         border-radius: 15px;
     }

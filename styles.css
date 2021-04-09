@@ -353,6 +353,8 @@ span{
     width: 420px;
     background-color: #F2F2F2;
     border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #pop_title{
@@ -405,16 +407,6 @@ aside a{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     object-fit: cover;
-}
-
-.hotels_aside:nth-child(1) .haside_image{
-    background-image: url('images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
-}
-.hotels_aside:nth-child(2) .haside_image{
-    background-image: url('images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg');
-}
-.hotels_aside:nth-child(3) .haside_image{
-    background-image: url('images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
 }
 
 .haside_text{
