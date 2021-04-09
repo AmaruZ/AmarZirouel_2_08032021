@@ -203,35 +203,35 @@
     }
 
     .activities_photo{
-        background-position: 50% 20%;
+        object-position: 50% 20%;
         min-height: 134px;
         max-height: 134px;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
     }
     .activities:nth-child(1) .activities_photo{
-        background-position: 50% 19%;
-        background-size: cover;
+        object-position: 50% 19%;
+        object-fit: cover;
     }
 
     .activities:nth-child(2) .activities_photo{
-        background-position: 50% 42%;
+        object-position: 50% 42%;
     }
 
     .activities:nth-child(3) .activities_photo{
-        background-position: 50% 18%;
+        object-position: 50% 18%;
         
     }
     .activities:nth-child(4) .activities_photo{
-        background-position: 50% 18%;
-        background-size: cover;
+        object-position: 50% 18%;
+        object-fit: cover;
     }
     .activities:nth-child(5) .activities_photo{
-        background-position: 50% 18%;
+        object-position: 50% 18%;
     }
 
     .activities:nth-child(6) .activities_photo{
-        background-position: 50% 26%;
+        object-position: 50% 26%;
     }
 
     .activities_text{
