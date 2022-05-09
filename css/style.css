@@ -49,7 +49,7 @@ ul{
 }
 
 .nav__link:hover{
-    box-shadow: inset 0px 1px 0px 0px #0065FC;
+    box-shadow: inset 0px 2px 0px 0px #0065FC;
     color: #0065FC;
 }
 
@@ -63,40 +63,32 @@ ul{
 }
 
 .nav__link:active{
-    box-shadow: inset 0px 1px 0px 0px #0065FC;
+    box-shadow: inset 0px 2px 0px 0px #0065FC;
 }
 
 section{
     display: flex;
-    flex-flow: column;
+    flex-flow: column nowrap;
 }
-/* --------------------SECTION 1 ------------------*/
 
-#research_title{
+.find__title{
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-top: 25px;    
+}
+
+.find__subtext{
     font-size: 0.9em;
+    margin-top: 7px; 
+}
+
+.textbox{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 30px;    
+    margin-top: 15px
 }
 
-h1{
-    font-weight: 800;
-    margin: 0px;
-}
-
-#research_title p{
-    margin: 5px 0px 15px;
-}
-
-#textbox{
-    display: flex;
-    align-items: center;
-    height: 40px;
-}
-
-#mapmarker{
-    display: flex;
+.textbox__mapmarker{
+    display: flex; 
     align-items: center;
     justify-content: center;
     background-color: #F2F2F2;
@@ -105,74 +97,76 @@ h1{
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
-#textbox input[type=text]{
+
+.textbox__input{
     height: 40px;
     border-right: none;
     border: 1px solid #f2f2f2;
-    box-sizing: border-box;
+    padding-left: 10px;
+    font-size: 0.85em;
+    font-weight: 600;
 }
 
-input::placeholder{
+.textbox__input::placeholder{
     font-family: 'Raleway', sans-serif;  
     color: black;
     font-weight: 800;
-    padding-left: 10px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     
 }
 
-input[type=text]:focus{
+.textbox__input:focus{
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
 }
 
 
-#research_button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.textbox__button{
     background-color: #0065fc;
     height: 40px;
     width: 120px;
+    color: white;
+    font-size: 0.95em;
+    font-weight: 600;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    border: none;
     position: relative;
-    right: 2px;
+    cursor: pointer;
 }
 
-#search_icon{
+.textbox__search-icon{
     display: none;
 }
 
-#textbox a{
-    color: white;
-    font-size: 0.95em;
-}
-
-
-#filter{
+.filter{
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: center;
-    font-weight: 800;
-    width: 930px;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
-#filter_buttons{
+.filter__buttons{
     display: flex;
     margin-left: 45px;
+
 }
 
-.filter_button{
+.filter__button{
     display: flex;
     align-items: center;
     margin-right: 40px;
+    border: 1px solid #cccccc;
+    background-color: white;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    overflow: hidden;
+    cursor: pointer;
 }
 
-.filter_button i{
+.filter__button__icon{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,57 +177,46 @@ input[type=text]:focus{
     color: #0065FC;
     position: absolute;
     margin-left: -20px;
-
 }
 
-
-.filter_button p{
+.filter__button__text{
     display: flex;
     align-items: center;
-    justify-content:start;
-    border-style: solid solid solid none;
+    font-weight: 800;
     border-width: 2px;
     height: 40px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border-color: rgb(204, 204, 204);
     padding-right: 15px;
     padding-left: 30px;
-    margin: 0px;
-
 }
 
-.filter_button:hover p{
+.filter__button__text:hover{
     background-color: #0065FC;
     color: white;
 }
 
-#infos{
+.infos{
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
-#infos i{
+.infos__icon{
     display: flex;
     justify-content: center;
     align-items: center;
     color: #0065FC;
     background-color: #FFFFFF;
-    border: 1px solid rgb(206, 206, 206);
+    border: 1px solid #cecece;
     border-radius: 50%;
     height: 20px;
     width: 20px;
     font-size: 0.8em;
 }
 
-#infos p{
-    padding-left: 10px;
-    font-size: 0.9em;
-    
+.infos__text{
+    margin-left: 10px;
+    font-size: 0.8em;
 }
-
-/* -----------------SECTION 2-------------------------------- */
 
 #lodging{
     display:flex;

@@ -8,13 +8,13 @@
         margin: 0;
     }
 
-    header{
+    .header{
         flex-direction: column;
         width: auto;
         font-size: 1em;
     }
 
-    header img{
+    .header__logo{
         position: absolute;
     }
 
