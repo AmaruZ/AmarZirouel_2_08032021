@@ -66,11 +66,6 @@ ul{
     box-shadow: inset 0px 2px 0px 0px #0065FC;
 }
 
-section{
-    display: flex;
-    flex-flow: column nowrap;
-}
-
 .find__title{
     font-weight: 700;
     font-size: 1.2em;
@@ -221,53 +216,41 @@ section{
 #lodging{
     display:flex;
     justify-content: space-between;
-    flex-flow: row nowrap;
-    width: auto;
+    margin-top: 30px;
 }
 
-.lodging_part{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.lodging__left{
     background-color: #F2F2F2;
     height: 620px;
     width: 880px;
     border-radius: 20px;
-
+    padding: 43px 45px 0 45px;
 }
 
-.lodging_part h2{
+.lodging__left__title{
     font-size: 1.3em;
     font-weight: 800;
-    margin: 43px 0px 5px 50px;
-}
-
-span{
-    font-weight: bold;
-}
-
-#hotels_list{
-    display: flex;
-    flex-wrap: wrap;
-    height: 500px;
-    width: auto;
-    justify-content: center;
-    
 }
 
 .hotels{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    height: 470px;
+    width: auto;
+    justify-content: space-between;
+}
+
+.hotel{
     background-color: white;
-    box-shadow: 1px 1px 10px rgba(128,128,128,0.5);
+    box-shadow: 1px 1px 10px #80808080;
     border-radius: 20px;
-    margin: 15px;
     height: 200px;
     width: 245px;
     padding: 5px;
-    box-sizing: border-box;
-    
 }
 
-.hotels_image{
+.hotel__image{
     height: 60%;
     width: 100%;
     border-top-left-radius: 15px;
@@ -276,106 +259,100 @@ span{
 }
 
 
-.hotels_text{
-    font-size: 0.8em;
-    display:flex;
+.hotel__text{
+    display: flex;
     flex-direction: column;
-    align-content: flex-start;
-    height: 40%;
-    width: auto;
+    font-size: 0.8em;
+    height: 37%;
     padding-left: 10px;
-    padding-top: 10px;
+    padding-top: 7px;
 }
-.hotels_text h3{
+
+.hotel__title{
     font-weight: 700;
     margin: 0px;
 }
-.hotels_text p{
-    margin: 6px 0px 6px 0px; 
-}
-.stars{
-    display: flex;
-    flex-direction: row;
-}
-.blue_stars{
-    color: #0065FC;
-}
-.grey_stars{
-    color: #ccc9c9;
+
+.hotel__subtext{
+    margin-top: 7px; 
 }
 
-#afficher_plus{
-    margin: 10px 0px 50px 55px;
+.hotel__price{
     font-weight: 700;
 }
 
-#lodging aside{
+.hotel__stars{
     display: flex;
-    flex-flow: column;
+    flex-direction: row;
+    margin-top: auto;
+}
+
+.hotel__stars--blue{
+    color: #0065FC;
+}
+
+.hotel__stars--grey{
+    color: #ccc9c9;
+}
+
+.lodging__more{
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.lodging__right{
     height: 620px;
     width: 420px;
     background-color: #F2F2F2;
     border-radius: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 43px 35px 0 35px;
 }
 
-#pop_title{
+.lodging__right__text{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 350px;
-    margin-left: 35px;
 }
 
-#pop_title h2{
+.lodging__right__title{
     font-size: 1.4em;
     font-weight: 800;
-    margin-top: 42px;
-    margin-left: 5px;
 }
 
-#pop_title i{
+.lodging__right__icon{
     font-size: 1.2em;
-    margin-top: 35px;
 }
 
-#haside_list{
-    width: auto;
+.popular-hotels{
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 86%;
+    margin-top: 20px;
+
 }
 
-.hotels_aside{
+.popular-hotel{
+    display: flex;
     height: 144px;
     width: 344px;
     background-color: white;
-    margin-bottom: 30px;
-    margin-left: 35px;
     border-radius: 20px;
     box-shadow: 1px 1px 10px rgba(128,128,128,0.3);
     border-radius: 20px;
-    box-sizing: border-box;
-    padding: 5px 0px 5px 5px;
+    padding: 5px;
 }
 
-aside a{
-    color: black;
-    display: flex;
-    height: 100%;
-    width: 100%;
-}
-.haside_image{
+.popular-hotel__image{
     width: 132px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     object-fit: cover;
 }
 
-.haside_text{
+.popular-hotel__text{
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
     font-size: 0.85em;
     margin-left: 17px;
     margin-top: 10px;
@@ -383,17 +360,13 @@ aside a{
     width: 140px;
 }
 
-.haside_text h3, .haside_text p{
-    margin: 0px 0px 10px 0px;
+.popular-hotel__subtext {
+    margin-top: 7px;
 }
 
-.haside_text .stars{
-    margin-left: 0px;
-    margin-top: 25px;
-
+.popular-hotel__price {
+    font-weight: 700;
 }
-
-/* --------- 3e SECTION -----------------------*/
 
 #activities{
     height: 500px;
