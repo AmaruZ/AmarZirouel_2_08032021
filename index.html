@@ -13,19 +13,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
   <title>Reservia</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=yes" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
 </head>
 
 <body>
   <div id="page_wrapper">
     <header class="header">
       <h1><img src="assets/logo/Reservia@3x.png" alt="Logo Reservia" class="header__logo" /></h1>
-      <nav>
+      <nav class="nav">
         <ul class="nav__links">
           <li><a href="#lodging" class="nav__link">Hébergements</a></li>
           <li><a href="#activities" class="nav__link">Activités</a></li>
-          <li><a href="#" class="nav__link nav__link--signup">S'inscrire</a></li>
         </ul>
+        <a href="#" class="nav__link--signup">S'inscrire</a>
       </nav>
     </header>
 
@@ -35,8 +35,10 @@
       <form class="textbox">
         <span class="textbox__mapmarker"><i class="fas fa-map-marker-alt"></i></span>
         <input type="text" placeholder="Marseille, France" class="textbox__input" />
-        <button class="textbox__button">Rechercher<span class="textbox__search-icon"><i
-              class="fas fa-search"></i></span></button>
+        <button class="textbox__button">
+          <span class="textbox__button__text">Rechercher</span>
+          <span class="textbox__search-icon"><i class="fas fa-search"></i></span>
+        </button>
       </form>
       <div class="filter">
         <h3 class="filter__title">Filtres</h3>

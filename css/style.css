@@ -34,6 +34,10 @@ ul{
     margin-top: 15px;
 }
 
+.nav{
+    display: flex;
+}
+
 .nav__links{
     display: flex;
     font-size: 1em;
@@ -56,6 +60,7 @@ ul{
 .nav__link--signup{
     color: #0065FC;
     font-weight: 700;
+    padding-top: 30px;
 }
 
 .nav__link:active{
