@@ -63,10 +63,10 @@
     }
 
     .popular-hotels{
-        width: auto;
+        width: 100%;
         display: flex;
         flex-flow: row wrap;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .popular-hotel{
